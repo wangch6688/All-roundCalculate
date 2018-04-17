@@ -113,6 +113,10 @@
 		E7CB39622085DA68005A1DAF /* All-roundCalculate */ = {
 			isa = PBXGroup;
 			children = (
+				E7CB39982085DDE0005A1DAF /* GJJ */,
+				E7CB39972085DDBD005A1DAF /* Compound */,
+				E7CB39962085DD82005A1DAF /* Year_end) */,
+				E7CB39952085DD6E005A1DAF /* Personal */,
 				E7CB39632085DA68005A1DAF /* AppDelegate.swift */,
 				E7CB39652085DA68005A1DAF /* ViewController.swift */,
 				E7CB39672085DA68005A1DAF /* Main.storyboard */,
@@ -140,6 +144,34 @@
 				E7CB39852085DA69005A1DAF /* Info.plist */,
 			);
 			path = "All-roundCalculateUITests";
+			sourceTree = "<group>";
+		};
+		E7CB39952085DD6E005A1DAF /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		E7CB39962085DD82005A1DAF /* Year_end) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Year_end)";
+			sourceTree = "<group>";
+		};
+		E7CB39972085DDBD005A1DAF /* Compound */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Compound;
+			sourceTree = "<group>";
+		};
+		E7CB39982085DDE0005A1DAF /* GJJ */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GJJ;
 			sourceTree = "<group>";
 		};
 		F0BFA00781F3A0F0FE916B74 /* Pods */ = {
