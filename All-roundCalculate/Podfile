@@ -1,0 +1,10 @@
+ platform :ios,'10.0'
+ 
+ target'All-roundCalculate'do
+ 
+ use_frameworks!
+ pod 'DZNEmptyDataSet'
+ pod 'Charts'
+ pod 'RealmSwift'
+ 
+ end
