@@ -15,6 +15,19 @@
 		E7CB396E2085DA69005A1DAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CB396C2085DA69005A1DAF /* LaunchScreen.storyboard */; };
 		E7CB39792085DA69005A1DAF /* All_roundCalculateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39782085DA69005A1DAF /* All_roundCalculateTests.swift */; };
 		E7CB39842085DA69005A1DAF /* All_roundCalculateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39832085DA69005A1DAF /* All_roundCalculateUITests.swift */; };
+		E7CB399B2085DFD6005A1DAF /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB399A2085DFD6005A1DAF /* MainTabBarController.swift */; };
+		E7CB399D2085E0A5005A1DAF /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB399C2085E0A5005A1DAF /* MainTabBar.swift */; };
+		E7CB39A02085E141005A1DAF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB399F2085E141005A1DAF /* UIView+Extension.swift */; };
+		E7CB39A22085E23F005A1DAF /* CommonTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39A12085E23F005A1DAF /* CommonTool.swift */; };
+		E7CB39A52085E29B005A1DAF /* GJJViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39A32085E29B005A1DAF /* GJJViewController.swift */; };
+		E7CB39A62085E29B005A1DAF /* GJJViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CB39A42085E29B005A1DAF /* GJJViewController.xib */; };
+		E7CB39A92085E2AB005A1DAF /* CompoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39A72085E2AB005A1DAF /* CompoundController.swift */; };
+		E7CB39AA2085E2AB005A1DAF /* CompoundController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CB39A82085E2AB005A1DAF /* CompoundController.xib */; };
+		E7CB39AD2085E2BC005A1DAF /* Year_endController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39AB2085E2BC005A1DAF /* Year_endController.swift */; };
+		E7CB39AE2085E2BC005A1DAF /* Year_endController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CB39AC2085E2BC005A1DAF /* Year_endController.xib */; };
+		E7CB39B12085E2CA005A1DAF /* PersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39AF2085E2CA005A1DAF /* PersonalController.swift */; };
+		E7CB39B22085E2CA005A1DAF /* PersonalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CB39B02085E2CA005A1DAF /* PersonalController.xib */; };
+		E7CB39B42085E33C005A1DAF /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39B32085E33C005A1DAF /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +65,19 @@
 		E7CB39832085DA69005A1DAF /* All_roundCalculateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = All_roundCalculateUITests.swift; sourceTree = "<group>"; };
 		E7CB39852085DA69005A1DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7CB39912085DC4D005A1DAF /* All-roundCalculate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "All-roundCalculate-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7CB399A2085DFD6005A1DAF /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E7CB399C2085E0A5005A1DAF /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		E7CB399F2085E141005A1DAF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		E7CB39A12085E23F005A1DAF /* CommonTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonTool.swift; sourceTree = "<group>"; };
+		E7CB39A32085E29B005A1DAF /* GJJViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GJJViewController.swift; sourceTree = "<group>"; };
+		E7CB39A42085E29B005A1DAF /* GJJViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GJJViewController.xib; sourceTree = "<group>"; };
+		E7CB39A72085E2AB005A1DAF /* CompoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundController.swift; sourceTree = "<group>"; };
+		E7CB39A82085E2AB005A1DAF /* CompoundController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompoundController.xib; sourceTree = "<group>"; };
+		E7CB39AB2085E2BC005A1DAF /* Year_endController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Year_endController.swift; sourceTree = "<group>"; };
+		E7CB39AC2085E2BC005A1DAF /* Year_endController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Year_endController.xib; sourceTree = "<group>"; };
+		E7CB39AF2085E2CA005A1DAF /* PersonalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalController.swift; sourceTree = "<group>"; };
+		E7CB39B02085E2CA005A1DAF /* PersonalController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalController.xib; sourceTree = "<group>"; };
+		E7CB39B32085E33C005A1DAF /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +139,11 @@
 		E7CB39622085DA68005A1DAF /* All-roundCalculate */ = {
 			isa = PBXGroup;
 			children = (
+				E7CB39992085DF49005A1DAF /* BaseItem */,
 				E7CB39982085DDE0005A1DAF /* GJJ */,
 				E7CB39972085DDBD005A1DAF /* Compound */,
-				E7CB39962085DD82005A1DAF /* Year_end) */,
+				E7CB39962085DD82005A1DAF /* Year_end */,
 				E7CB39952085DD6E005A1DAF /* Personal */,
-				E7CB39632085DA68005A1DAF /* AppDelegate.swift */,
 				E7CB39652085DA68005A1DAF /* ViewController.swift */,
 				E7CB39672085DA68005A1DAF /* Main.storyboard */,
 				E7CB396A2085DA69005A1DAF /* Assets.xcassets */,
@@ -149,20 +175,26 @@
 		E7CB39952085DD6E005A1DAF /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				E7CB39AF2085E2CA005A1DAF /* PersonalController.swift */,
+				E7CB39B02085E2CA005A1DAF /* PersonalController.xib */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
 		};
-		E7CB39962085DD82005A1DAF /* Year_end) */ = {
+		E7CB39962085DD82005A1DAF /* Year_end */ = {
 			isa = PBXGroup;
 			children = (
+				E7CB39AB2085E2BC005A1DAF /* Year_endController.swift */,
+				E7CB39AC2085E2BC005A1DAF /* Year_endController.xib */,
 			);
-			path = "Year_end)";
+			path = Year_end;
 			sourceTree = "<group>";
 		};
 		E7CB39972085DDBD005A1DAF /* Compound */ = {
 			isa = PBXGroup;
 			children = (
+				E7CB39A72085E2AB005A1DAF /* CompoundController.swift */,
+				E7CB39A82085E2AB005A1DAF /* CompoundController.xib */,
 			);
 			path = Compound;
 			sourceTree = "<group>";
@@ -170,8 +202,31 @@
 		E7CB39982085DDE0005A1DAF /* GJJ */ = {
 			isa = PBXGroup;
 			children = (
+				E7CB39A32085E29B005A1DAF /* GJJViewController.swift */,
+				E7CB39A42085E29B005A1DAF /* GJJViewController.xib */,
 			);
 			path = GJJ;
+			sourceTree = "<group>";
+		};
+		E7CB39992085DF49005A1DAF /* BaseItem */ = {
+			isa = PBXGroup;
+			children = (
+				E7CB399E2085E0D4005A1DAF /* Extension */,
+				E7CB399A2085DFD6005A1DAF /* MainTabBarController.swift */,
+				E7CB399C2085E0A5005A1DAF /* MainTabBar.swift */,
+				E7CB39B32085E33C005A1DAF /* MainNavigationController.swift */,
+				E7CB39632085DA68005A1DAF /* AppDelegate.swift */,
+			);
+			path = BaseItem;
+			sourceTree = "<group>";
+		};
+		E7CB399E2085E0D4005A1DAF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E7CB399F2085E141005A1DAF /* UIView+Extension.swift */,
+				E7CB39A12085E23F005A1DAF /* CommonTool.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		F0BFA00781F3A0F0FE916B74 /* Pods */ = {
@@ -291,8 +346,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CB39A62085E29B005A1DAF /* GJJViewController.xib in Resources */,
+				E7CB39AA2085E2AB005A1DAF /* CompoundController.xib in Resources */,
 				E7CB396E2085DA69005A1DAF /* LaunchScreen.storyboard in Resources */,
+				E7CB39B22085E2CA005A1DAF /* PersonalController.xib in Resources */,
 				E7CB396B2085DA69005A1DAF /* Assets.xcassets in Resources */,
+				E7CB39AE2085E2BC005A1DAF /* Year_endController.xib in Resources */,
 				E7CB39692085DA68005A1DAF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,8 +437,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CB399D2085E0A5005A1DAF /* MainTabBar.swift in Sources */,
 				E7CB39662085DA68005A1DAF /* ViewController.swift in Sources */,
+				E7CB39AD2085E2BC005A1DAF /* Year_endController.swift in Sources */,
+				E7CB39B42085E33C005A1DAF /* MainNavigationController.swift in Sources */,
 				E7CB39642085DA68005A1DAF /* AppDelegate.swift in Sources */,
+				E7CB39A02085E141005A1DAF /* UIView+Extension.swift in Sources */,
+				E7CB39A92085E2AB005A1DAF /* CompoundController.swift in Sources */,
+				E7CB39A22085E23F005A1DAF /* CommonTool.swift in Sources */,
+				E7CB39B12085E2CA005A1DAF /* PersonalController.swift in Sources */,
+				E7CB399B2085DFD6005A1DAF /* MainTabBarController.swift in Sources */,
+				E7CB39A52085E29B005A1DAF /* GJJViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
