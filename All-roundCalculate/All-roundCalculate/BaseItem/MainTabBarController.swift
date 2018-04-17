@@ -30,7 +30,7 @@ class MainTabBarController: UITabBarController {
 
 extension MainTabBarController {
     fileprivate func setupUI() {
-        setValue(MainTabBar(), forKey: "tabBar")
+        setValue(UITabBar(), forKey: "tabBar")
         
         let vcArray:[UIViewController] = [GJJViewController(), CompoundController(), Year_endController(), PersonalController()]
         let titleArray = [("五险一金", "essence"), ("复利", "new"), ("年终", "friendTrends"), ("我", "me")]

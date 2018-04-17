@@ -62,5 +62,4 @@ extension MainTabBar {
 //
 //        UIApplication.shared.keyWindow?.rootViewController?.present(publishVC, animated: false, completion: nil)
     }
-    
 }
