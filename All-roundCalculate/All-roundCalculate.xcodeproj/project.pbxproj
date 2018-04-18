@@ -28,6 +28,9 @@
 		E7CB39B12085E2CA005A1DAF /* PersonalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39AF2085E2CA005A1DAF /* PersonalController.swift */; };
 		E7CB39B22085E2CA005A1DAF /* PersonalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CB39B02085E2CA005A1DAF /* PersonalController.xib */; };
 		E7CB39B42085E33C005A1DAF /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39B32085E33C005A1DAF /* MainNavigationController.swift */; };
+		E7CB39B72085F4A3005A1DAF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39B62085F4A3005A1DAF /* BaseViewController.swift */; };
+		E7CB39B92085F6ED005A1DAF /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39B82085F6ED005A1DAF /* EmptyView.swift */; };
+		E7CB39BB2085F6FF005A1DAF /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7CB39BA2085F6FF005A1DAF /* EmptyView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		E7CB39AF2085E2CA005A1DAF /* PersonalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalController.swift; sourceTree = "<group>"; };
 		E7CB39B02085E2CA005A1DAF /* PersonalController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalController.xib; sourceTree = "<group>"; };
 		E7CB39B32085E33C005A1DAF /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		E7CB39B62085F4A3005A1DAF /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		E7CB39B82085F6ED005A1DAF /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
+		E7CB39BA2085F6FF005A1DAF /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,11 +217,8 @@
 		E7CB39992085DF49005A1DAF /* BaseItem */ = {
 			isa = PBXGroup;
 			children = (
+				E7CB39B52085F470005A1DAF /* Main */,
 				E7CB399E2085E0D4005A1DAF /* Extension */,
-				E7CB399A2085DFD6005A1DAF /* MainTabBarController.swift */,
-				E7CB399C2085E0A5005A1DAF /* MainTabBar.swift */,
-				E7CB39B32085E33C005A1DAF /* MainNavigationController.swift */,
-				E7CB39632085DA68005A1DAF /* AppDelegate.swift */,
 			);
 			path = BaseItem;
 			sourceTree = "<group>";
@@ -227,6 +230,20 @@
 				E7CB39A12085E23F005A1DAF /* CommonTool.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		E7CB39B52085F470005A1DAF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E7CB39632085DA68005A1DAF /* AppDelegate.swift */,
+				E7CB399A2085DFD6005A1DAF /* MainTabBarController.swift */,
+				E7CB399C2085E0A5005A1DAF /* MainTabBar.swift */,
+				E7CB39B32085E33C005A1DAF /* MainNavigationController.swift */,
+				E7CB39B62085F4A3005A1DAF /* BaseViewController.swift */,
+				E7CB39B82085F6ED005A1DAF /* EmptyView.swift */,
+				E7CB39BA2085F6FF005A1DAF /* EmptyView.xib */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		F0BFA00781F3A0F0FE916B74 /* Pods */ = {
@@ -346,6 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7CB39BB2085F6FF005A1DAF /* EmptyView.xib in Resources */,
 				E7CB39A62085E29B005A1DAF /* GJJViewController.xib in Resources */,
 				E7CB39AA2085E2AB005A1DAF /* CompoundController.xib in Resources */,
 				E7CB396E2085DA69005A1DAF /* LaunchScreen.storyboard in Resources */,
@@ -438,10 +456,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CB399D2085E0A5005A1DAF /* MainTabBar.swift in Sources */,
+				E7CB39B92085F6ED005A1DAF /* EmptyView.swift in Sources */,
 				E7CB39662085DA68005A1DAF /* ViewController.swift in Sources */,
 				E7CB39AD2085E2BC005A1DAF /* Year_endController.swift in Sources */,
 				E7CB39B42085E33C005A1DAF /* MainNavigationController.swift in Sources */,
 				E7CB39642085DA68005A1DAF /* AppDelegate.swift in Sources */,
+				E7CB39B72085F4A3005A1DAF /* BaseViewController.swift in Sources */,
 				E7CB39A02085E141005A1DAF /* UIView+Extension.swift in Sources */,
 				E7CB39A92085E2AB005A1DAF /* CompoundController.swift in Sources */,
 				E7CB39A22085E23F005A1DAF /* CommonTool.swift in Sources */,

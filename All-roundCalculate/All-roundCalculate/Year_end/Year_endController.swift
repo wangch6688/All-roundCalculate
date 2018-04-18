@@ -8,12 +8,19 @@
 
 import UIKit
 
-class Year_endController: UIViewController {
+class Year_endController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationItem.title = "年终计算"
+        self.emptyView?.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {

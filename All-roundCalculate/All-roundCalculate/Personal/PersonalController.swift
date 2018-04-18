@@ -8,12 +8,19 @@
 
 import UIKit
 
-class PersonalController: UIViewController {
+class PersonalController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationItem.title = "个人信息"
+        self.emptyView?.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {

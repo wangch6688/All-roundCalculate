@@ -12,10 +12,11 @@ class MainNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationBar.setBackgroundImage(UIImage(named:"navigationbarBackgroundWhite"), for: .default)
-        //        setUpPopGesTrue()
+        self.navigationBar.setBackgroundImage(UIImage(named: "nav_bar_white"), for: .default)
+        self.navigationBar.shadowImage = UIImage(named: "nav_shadow")
+        self.navigationBar.isHidden = true
+        setUpPopGesTrue()
     }
-    
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if childViewControllers.count > 0 {
             let button = UIButton(type: .custom)
@@ -38,7 +39,6 @@ class MainNavigationController: UINavigationController {
         return .default
     }
 }
-
 
 // MARK: - 点击事件
 extension MainNavigationController {

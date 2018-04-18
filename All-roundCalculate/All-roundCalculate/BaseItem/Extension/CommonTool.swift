@@ -17,8 +17,3 @@ let kTabBarHeight: CGFloat = (UIApplication.shared.statusBarFrame.size.height > 
 let kTopHeight = kStatusBarHeight + kNavBarHeight
 let kScreenWidth = UIScreen.main.bounds.width
 let kScreenHeight = UIScreen.main.bounds.height
-
-
-class CommonTool: NSObject {
-
-}

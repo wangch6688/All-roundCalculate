@@ -8,12 +8,19 @@
 
 import UIKit
 
-class CompoundController: UIViewController {
+class CompoundController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationItem.title = "复利计算"
+        self.emptyView?.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {

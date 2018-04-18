@@ -7,13 +7,21 @@
 //
 
 import UIKit
+import Charts
 
-class GJJViewController: UIViewController {
+class GJJViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationItem.title = "五险一金"
+        self.emptyView?.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {
