@@ -29,12 +29,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         self.navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
         self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 1)
         self.navigationController?.navigationBar.layer.shadowOpacity = 0.2
-        if let rect = self.navigationController?.navigationBar.bounds {
-            self.navigationController?.navigationBar.layer.shadowPath = UIBezierPath(rect: rect).cgPath
-            self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
-            self.navigationController?.navigationBar.shadowImage = UIImage()
-        }
-        self.emptyView?.frame = CGRect(x: 0, y: kTopHeight, width: kScreenWidth, height: kScreenHeight - kTabBarHeight)
+        self.emptyView?.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - kTabBarHeight)
         view.addSubview(self.emptyView!)
         self.emptyView?.isHidden = true
     }

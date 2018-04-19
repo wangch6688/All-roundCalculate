@@ -14,7 +14,6 @@ class MainNavigationController: UINavigationController {
         super.viewDidLoad()
         self.navigationBar.setBackgroundImage(UIImage(named: "nav_bar_white"), for: .default)
         self.navigationBar.shadowImage = UIImage(named: "nav_shadow")
-        self.navigationBar.isHidden = true
         setUpPopGesTrue()
     }
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
