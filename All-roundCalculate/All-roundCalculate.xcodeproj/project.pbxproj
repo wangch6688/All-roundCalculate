@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2A2E7C74AF530127A91971C8 /* Pods_All_roundCalculate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D040BEA417749DCD375F4CF /* Pods_All_roundCalculate.framework */; };
+		E7AD1E532088437500E3680C /* PersonalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD1E522088437500E3680C /* PersonalTableView.swift */; };
+		E7AD1E55208846CA00E3680C /* PersonalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD1E54208846CA00E3680C /* PersonalHeader.swift */; };
+		E7AD1E57208846F700E3680C /* PersonalHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AD1E56208846F700E3680C /* PersonalHeader.xib */; };
 		E7CB39642085DA68005A1DAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39632085DA68005A1DAF /* AppDelegate.swift */; };
 		E7CB39662085DA68005A1DAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB39652085DA68005A1DAF /* ViewController.swift */; };
 		E7CB39692085DA68005A1DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7CB39672085DA68005A1DAF /* Main.storyboard */; };
@@ -54,6 +57,9 @@
 		3ACF257B0D7CFE56C2E61A4B /* Pods-All-roundCalculate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All-roundCalculate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-All-roundCalculate/Pods-All-roundCalculate.debug.xcconfig"; sourceTree = "<group>"; };
 		3D040BEA417749DCD375F4CF /* Pods_All_roundCalculate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All_roundCalculate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6719CD936F5BBB5E918793E /* Pods-All-roundCalculate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All-roundCalculate.release.xcconfig"; path = "Pods/Target Support Files/Pods-All-roundCalculate/Pods-All-roundCalculate.release.xcconfig"; sourceTree = "<group>"; };
+		E7AD1E522088437500E3680C /* PersonalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableView.swift; sourceTree = "<group>"; };
+		E7AD1E54208846CA00E3680C /* PersonalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalHeader.swift; sourceTree = "<group>"; };
+		E7AD1E56208846F700E3680C /* PersonalHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalHeader.xib; sourceTree = "<group>"; };
 		E7CB39602085DA68005A1DAF /* All-roundCalculate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "All-roundCalculate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7CB39632085DA68005A1DAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7CB39652085DA68005A1DAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +126,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7AD1E4F2088430500E3680C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E7CB39AF2085E2CA005A1DAF /* PersonalController.swift */,
+				E7CB39B02085E2CA005A1DAF /* PersonalController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E7AD1E502088431300E3680C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E7AD1E512088431A00E3680C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7AD1E522088437500E3680C /* PersonalTableView.swift */,
+				E7AD1E54208846CA00E3680C /* PersonalHeader.swift */,
+				E7AD1E56208846F700E3680C /* PersonalHeader.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E7CB39572085DA68005A1DAF = {
 			isa = PBXGroup;
 			children = (
@@ -181,8 +213,9 @@
 		E7CB39952085DD6E005A1DAF /* Personal */ = {
 			isa = PBXGroup;
 			children = (
-				E7CB39AF2085E2CA005A1DAF /* PersonalController.swift */,
-				E7CB39B02085E2CA005A1DAF /* PersonalController.xib */,
+				E7AD1E502088431300E3680C /* Model */,
+				E7AD1E512088431A00E3680C /* View */,
+				E7AD1E4F2088430500E3680C /* Controller */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -364,6 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CB39BB2085F6FF005A1DAF /* EmptyView.xib in Resources */,
+				E7AD1E57208846F700E3680C /* PersonalHeader.xib in Resources */,
 				E7CB39A62085E29B005A1DAF /* GJJViewController.xib in Resources */,
 				E7CB39AA2085E2AB005A1DAF /* CompoundController.xib in Resources */,
 				E7CB396E2085DA69005A1DAF /* LaunchScreen.storyboard in Resources */,
@@ -456,6 +490,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CB399D2085E0A5005A1DAF /* MainTabBar.swift in Sources */,
+				E7AD1E532088437500E3680C /* PersonalTableView.swift in Sources */,
+				E7AD1E55208846CA00E3680C /* PersonalHeader.swift in Sources */,
 				E7CB39B92085F6ED005A1DAF /* EmptyView.swift in Sources */,
 				E7CB39662085DA68005A1DAF /* ViewController.swift in Sources */,
 				E7CB39AD2085E2BC005A1DAF /* Year_endController.swift in Sources */,
