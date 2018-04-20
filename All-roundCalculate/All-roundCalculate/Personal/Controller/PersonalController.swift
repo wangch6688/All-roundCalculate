@@ -8,14 +8,26 @@
 
 import UIKit
 let PersonlInfoArr = ["个人信息", "设置", "记录"]
-let PersonaInfoDic = {[]}
+var profileSections = [
+    Section(name: "Personal Info",
+            items:  ["info"]),
+    Section(name: "AppSetting",
+            items:  ["Setting"]),
+    Section(name: "Record",
+            items:  ["Record1",
+                    "Record2",
+                    "Record3",
+                    "Record4"])
+    ]
+
 
 class PersonalController: BaseViewController {
 
+    @IBOutlet weak var personalTabView: PersonalTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        personalTabView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - kTopHeight)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -24,7 +36,7 @@ class PersonalController: BaseViewController {
         self.navigationItem.title = "个人信息"
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = true
-            self.navigationItem.largeTitleDisplayMode = .automatic
+            self.navigationItem.largeTitleDisplayMode = .never
         } 
     }
 

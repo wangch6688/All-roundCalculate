@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		2A2E7C74AF530127A91971C8 /* Pods_All_roundCalculate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D040BEA417749DCD375F4CF /* Pods_All_roundCalculate.framework */; };
+		E7A200F32089B8C900151195 /* Audi-Extended-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A200F12089B8C900151195 /* Audi-Extended-Bold.ttf */; };
+		E7A200F42089B8C900151195 /* Audi-Screen-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A200F22089B8C900151195 /* Audi-Screen-Normal.ttf */; };
+		E7A200F72089C2D200151195 /* PersonalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A200F52089C2D200151195 /* PersonalCell.swift */; };
+		E7A200F82089C2D200151195 /* PersonalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A200F62089C2D200151195 /* PersonalCell.xib */; };
+		E7A200FB2089C95900151195 /* PersonalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A200FA2089C95900151195 /* PersonalHeaderView.swift */; };
+		E7A200FD2089C96700151195 /* PersonalHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A200FC2089C96700151195 /* PersonalHeaderView.xib */; };
 		E7AD1E532088437500E3680C /* PersonalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD1E522088437500E3680C /* PersonalTableView.swift */; };
 		E7AD1E55208846CA00E3680C /* PersonalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD1E54208846CA00E3680C /* PersonalHeader.swift */; };
 		E7AD1E57208846F700E3680C /* PersonalHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AD1E56208846F700E3680C /* PersonalHeader.xib */; };
@@ -57,6 +63,12 @@
 		3ACF257B0D7CFE56C2E61A4B /* Pods-All-roundCalculate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All-roundCalculate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-All-roundCalculate/Pods-All-roundCalculate.debug.xcconfig"; sourceTree = "<group>"; };
 		3D040BEA417749DCD375F4CF /* Pods_All_roundCalculate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All_roundCalculate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6719CD936F5BBB5E918793E /* Pods-All-roundCalculate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All-roundCalculate.release.xcconfig"; path = "Pods/Target Support Files/Pods-All-roundCalculate/Pods-All-roundCalculate.release.xcconfig"; sourceTree = "<group>"; };
+		E7A200F12089B8C900151195 /* Audi-Extended-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audi-Extended-Bold.ttf"; sourceTree = "<group>"; };
+		E7A200F22089B8C900151195 /* Audi-Screen-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audi-Screen-Normal.ttf"; sourceTree = "<group>"; };
+		E7A200F52089C2D200151195 /* PersonalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCell.swift; sourceTree = "<group>"; };
+		E7A200F62089C2D200151195 /* PersonalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalCell.xib; sourceTree = "<group>"; };
+		E7A200FA2089C95900151195 /* PersonalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalHeaderView.swift; sourceTree = "<group>"; };
+		E7A200FC2089C96700151195 /* PersonalHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalHeaderView.xib; sourceTree = "<group>"; };
 		E7AD1E522088437500E3680C /* PersonalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableView.swift; sourceTree = "<group>"; };
 		E7AD1E54208846CA00E3680C /* PersonalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalHeader.swift; sourceTree = "<group>"; };
 		E7AD1E56208846F700E3680C /* PersonalHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalHeader.xib; sourceTree = "<group>"; };
@@ -126,6 +138,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7A200F02089B8B600151195 /* Reosurce */ = {
+			isa = PBXGroup;
+			children = (
+				E7A200F12089B8C900151195 /* Audi-Extended-Bold.ttf */,
+				E7A200F22089B8C900151195 /* Audi-Screen-Normal.ttf */,
+			);
+			path = Reosurce;
+			sourceTree = "<group>";
+		};
+		E7A200F92089C92400151195 /* PersonalTableView */ = {
+			isa = PBXGroup;
+			children = (
+				E7AD1E522088437500E3680C /* PersonalTableView.swift */,
+				E7AD1E54208846CA00E3680C /* PersonalHeader.swift */,
+				E7AD1E56208846F700E3680C /* PersonalHeader.xib */,
+				E7A200F52089C2D200151195 /* PersonalCell.swift */,
+				E7A200F62089C2D200151195 /* PersonalCell.xib */,
+				E7A200FA2089C95900151195 /* PersonalHeaderView.swift */,
+				E7A200FC2089C96700151195 /* PersonalHeaderView.xib */,
+			);
+			path = PersonalTableView;
+			sourceTree = "<group>";
+		};
 		E7AD1E4F2088430500E3680C /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,9 +180,7 @@
 		E7AD1E512088431A00E3680C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				E7AD1E522088437500E3680C /* PersonalTableView.swift */,
-				E7AD1E54208846CA00E3680C /* PersonalHeader.swift */,
-				E7AD1E56208846F700E3680C /* PersonalHeader.xib */,
+				E7A200F92089C92400151195 /* PersonalTableView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +283,7 @@
 		E7CB39992085DF49005A1DAF /* BaseItem */ = {
 			isa = PBXGroup;
 			children = (
+				E7A200F02089B8B600151195 /* Reosurce */,
 				E7CB39B52085F470005A1DAF /* Main */,
 				E7CB399E2085E0D4005A1DAF /* Extension */,
 			);
@@ -397,14 +431,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CB39BB2085F6FF005A1DAF /* EmptyView.xib in Resources */,
+				E7A200F82089C2D200151195 /* PersonalCell.xib in Resources */,
 				E7AD1E57208846F700E3680C /* PersonalHeader.xib in Resources */,
+				E7A200FD2089C96700151195 /* PersonalHeaderView.xib in Resources */,
 				E7CB39A62085E29B005A1DAF /* GJJViewController.xib in Resources */,
 				E7CB39AA2085E2AB005A1DAF /* CompoundController.xib in Resources */,
 				E7CB396E2085DA69005A1DAF /* LaunchScreen.storyboard in Resources */,
 				E7CB39B22085E2CA005A1DAF /* PersonalController.xib in Resources */,
 				E7CB396B2085DA69005A1DAF /* Assets.xcassets in Resources */,
+				E7A200F42089B8C900151195 /* Audi-Screen-Normal.ttf in Resources */,
 				E7CB39AE2085E2BC005A1DAF /* Year_endController.xib in Resources */,
 				E7CB39692085DA68005A1DAF /* Main.storyboard in Resources */,
+				E7A200F32089B8C900151195 /* Audi-Extended-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +528,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7CB399D2085E0A5005A1DAF /* MainTabBar.swift in Sources */,
+				E7A200F72089C2D200151195 /* PersonalCell.swift in Sources */,
 				E7AD1E532088437500E3680C /* PersonalTableView.swift in Sources */,
 				E7AD1E55208846CA00E3680C /* PersonalHeader.swift in Sources */,
 				E7CB39B92085F6ED005A1DAF /* EmptyView.swift in Sources */,
@@ -498,6 +537,7 @@
 				E7CB39B42085E33C005A1DAF /* MainNavigationController.swift in Sources */,
 				E7CB39642085DA68005A1DAF /* AppDelegate.swift in Sources */,
 				E7CB39B72085F4A3005A1DAF /* BaseViewController.swift in Sources */,
+				E7A200FB2089C95900151195 /* PersonalHeaderView.swift in Sources */,
 				E7CB39A02085E141005A1DAF /* UIView+Extension.swift in Sources */,
 				E7CB39A92085E2AB005A1DAF /* CompoundController.swift in Sources */,
 				E7CB39A22085E23F005A1DAF /* CommonTool.swift in Sources */,
