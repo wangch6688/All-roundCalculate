@@ -2,24 +2,30 @@ PODS:
   - Charts (3.1.1):
     - Charts/Core (= 3.1.1)
   - Charts/Core (3.1.1)
-  - DZNEmptyDataSet (1.8.1)
+  - IQKeyboardManagerSwift (5.0.8)
+  - Kingfisher (4.5.0)
   - Realm (3.3.2):
     - Realm/Headers (= 3.3.2)
   - Realm/Headers (3.3.2)
   - RealmSwift (3.3.2):
     - Realm (= 3.3.2)
+  - SnapKit (4.0.0)
 
 DEPENDENCIES:
   - Charts
-  - DZNEmptyDataSet
+  - IQKeyboardManagerSwift (~> 5.0.6)
+  - Kingfisher (~> 4.5.0)
   - RealmSwift
+  - SnapKit
 
 SPEC CHECKSUMS:
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
-  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
   Realm: d927fbf66df5532cfafc08afb5f7e53ded37b894
   RealmSwift: 4e903a494e05d866581d69ad6f7e7b879d446baf
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: f4b82306e5d48718563bdea2371219f18040dd92
+PODFILE CHECKSUM: 2b43e5fedc42cca5f6670b15b725925f279894c7
 
 COCOAPODS: 1.4.0

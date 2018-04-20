@@ -3,8 +3,11 @@
  target'All-roundCalculate'do
  
  use_frameworks!
- pod 'DZNEmptyDataSet'
+
  pod 'Charts'
  pod 'RealmSwift'
+ pod 'SnapKit'
+ pod 'Kingfisher', '~> 4.5.0'
+ pod 'IQKeyboardManagerSwift', '~> 5.0.6'
  
  end

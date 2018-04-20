@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class PersonalTableView: UITableView {
     
@@ -26,8 +27,16 @@ class PersonalTableView: UITableView {
         self.backgroundColor = AudiBgColor
         self.register(UINib.init(nibName: "PersonalHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: PersonalHeader_Identifier)
         self.register(UINib.init(nibName: "PersonalCell", bundle: nil), forCellReuseIdentifier: PersonalCell_Identifier)
-        tableViewHeaderView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: 276)
-        self.tableHeaderView = tableViewHeaderView
+        
+        let headerView = UIView()
+        headerView.addSubview(tableViewHeaderView)
+        tableViewHeaderView.snp.makeConstraints { (make) in
+            make.edges.equalTo(headerView)
+        }
+        headerView.backgroundColor = .green
+        headerView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: 276)
+        headerView.layoutIfNeeded()
+        self.tableHeaderView = headerView
     }
 }
 
