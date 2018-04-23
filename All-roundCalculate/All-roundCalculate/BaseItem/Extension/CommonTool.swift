@@ -58,6 +58,16 @@ struct Section {
     }
 }
 
+func currentViewController() -> BaseViewController? {
+    let rootVC = UIApplication.shared.keyWindow?.rootViewController as? MainTabBarController
+    if let index = rootVC?.selectedIndex {
+        let current = rootVC?.viewControllers?[index].childViewControllers.first as? BaseViewController
+        return current
+    } else {
+        return nil
+    }
+}
+
 
 extension UIColor {
     convenience init(hexString: String) {

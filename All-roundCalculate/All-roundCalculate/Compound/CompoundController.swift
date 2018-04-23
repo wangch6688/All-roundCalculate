@@ -20,7 +20,6 @@ class CompoundController: BaseViewController {
         super.viewWillAppear(animated)
         
         self.navigationItem.title = "复利计算"
-        self.emptyView?.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {

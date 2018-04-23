@@ -20,7 +20,6 @@ class Year_endController: BaseViewController {
         super.viewWillAppear(animated)
         
         self.navigationItem.title = "年终计算"
-        self.emptyView?.isHidden = false
     }
 
     override func didReceiveMemoryWarning() {

@@ -26,13 +26,18 @@ class PersonalController: BaseViewController {
     @IBOutlet weak var personalTabView: PersonalTableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         personalTabView.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: kScreenHeight - kTopHeight)
+        personalTabView.callBack { (indxpath) in
+        let emptypVC = EmptyViewController()
+        emptypVC.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(emptypVC, animated: true)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        self.emptyView?.isHidden = true
         self.navigationItem.title = "个人信息"
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = true

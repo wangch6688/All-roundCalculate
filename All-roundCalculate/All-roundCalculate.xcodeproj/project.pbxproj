@@ -14,6 +14,8 @@
 		E7A200F82089C2D200151195 /* PersonalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A200F62089C2D200151195 /* PersonalCell.xib */; };
 		E7A200FB2089C95900151195 /* PersonalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A200FA2089C95900151195 /* PersonalHeaderView.swift */; };
 		E7A200FD2089C96700151195 /* PersonalHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A200FC2089C96700151195 /* PersonalHeaderView.xib */; };
+		E7A20179208DDA9000151195 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A20177208DDA9000151195 /* EmptyViewController.swift */; };
+		E7A2017A208DDA9000151195 /* EmptyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A20178208DDA9000151195 /* EmptyViewController.xib */; };
 		E7AD1E532088437500E3680C /* PersonalTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD1E522088437500E3680C /* PersonalTableView.swift */; };
 		E7AD1E55208846CA00E3680C /* PersonalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AD1E54208846CA00E3680C /* PersonalHeader.swift */; };
 		E7AD1E57208846F700E3680C /* PersonalHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AD1E56208846F700E3680C /* PersonalHeader.xib */; };
@@ -69,6 +71,8 @@
 		E7A200F62089C2D200151195 /* PersonalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalCell.xib; sourceTree = "<group>"; };
 		E7A200FA2089C95900151195 /* PersonalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalHeaderView.swift; sourceTree = "<group>"; };
 		E7A200FC2089C96700151195 /* PersonalHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalHeaderView.xib; sourceTree = "<group>"; };
+		E7A20177208DDA9000151195 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
+		E7A20178208DDA9000151195 /* EmptyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyViewController.xib; sourceTree = "<group>"; };
 		E7AD1E522088437500E3680C /* PersonalTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalTableView.swift; sourceTree = "<group>"; };
 		E7AD1E54208846CA00E3680C /* PersonalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalHeader.swift; sourceTree = "<group>"; };
 		E7AD1E56208846F700E3680C /* PersonalHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalHeader.xib; sourceTree = "<group>"; };
@@ -180,6 +184,8 @@
 		E7AD1E512088431A00E3680C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E7A20177208DDA9000151195 /* EmptyViewController.swift */,
+				E7A20178208DDA9000151195 /* EmptyViewController.xib */,
 				E7A200F92089C92400151195 /* PersonalTableView */,
 			);
 			path = View;
@@ -438,6 +444,7 @@
 				E7CB39AA2085E2AB005A1DAF /* CompoundController.xib in Resources */,
 				E7CB396E2085DA69005A1DAF /* LaunchScreen.storyboard in Resources */,
 				E7CB39B22085E2CA005A1DAF /* PersonalController.xib in Resources */,
+				E7A2017A208DDA9000151195 /* EmptyViewController.xib in Resources */,
 				E7CB396B2085DA69005A1DAF /* Assets.xcassets in Resources */,
 				E7A200F42089B8C900151195 /* Audi-Screen-Normal.ttf in Resources */,
 				E7CB39AE2085E2BC005A1DAF /* Year_endController.xib in Resources */,
@@ -537,6 +544,7 @@
 				E7AD1E55208846CA00E3680C /* PersonalHeader.swift in Sources */,
 				E7CB39B92085F6ED005A1DAF /* EmptyView.swift in Sources */,
 				E7CB39662085DA68005A1DAF /* ViewController.swift in Sources */,
+				E7A20179208DDA9000151195 /* EmptyViewController.swift in Sources */,
 				E7CB39AD2085E2BC005A1DAF /* Year_endController.swift in Sources */,
 				E7CB39B42085E33C005A1DAF /* MainNavigationController.swift in Sources */,
 				E7CB39642085DA68005A1DAF /* AppDelegate.swift in Sources */,
@@ -726,7 +734,10 @@
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "All-roundCalculate/All-roundCalculate-Bridging-Header.h";
@@ -746,7 +757,10 @@
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "All-roundCalculate/All-roundCalculate-Bridging-Header.h";
@@ -763,7 +777,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -780,7 +798,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -796,7 +818,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -812,7 +838,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

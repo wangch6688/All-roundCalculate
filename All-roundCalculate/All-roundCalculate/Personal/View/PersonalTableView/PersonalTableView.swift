@@ -9,11 +9,14 @@
 import UIKit
 import SnapKit
 
+//格式: typealias 闭包名称 = (参数名称: 参数类型) -> 返回值类型
+typealias PersonalBloack = (_ indexpath : IndexPath) -> Void
 class PersonalTableView: UITableView {
     
     let PersonalHeader_Identifier = "PersonalHeader_Identifier"
     let PersonalCell_Identifier = "PersonalCell_Identifier"
     let tableViewHeaderView = Bundle.main.loadNibNamed("PersonalHeaderView", owner: self, options: nil)?.first as! PersonalHeaderView
+    var block : PersonalBloack?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -40,9 +43,18 @@ class PersonalTableView: UITableView {
     }
 }
 
+extension PersonalTableView {
+    func callBack(personBlock : PersonalBloack?) {
+        self.block = personBlock
+    }
+}
+
 extension PersonalTableView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
+        if let block = self.block {
+            block(indexPath)
+        }
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
