@@ -22,7 +22,7 @@
                         <constraint firstAttribute="height" constant="192" id="HDh-m5-FAf"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kYz-T8-gHw">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userImage" translatesAutoresizingMaskIntoConstraints="NO" id="kYz-T8-gHw">
                     <rect key="frame" x="10" y="116" width="90" height="90"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="Nvo-zG-4DD"/>
@@ -34,16 +34,16 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="6Zn-oK-man"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTx-iE-ZPJ">
-                    <rect key="frame" x="15" y="252" width="350" height="24"/>
+                    <rect key="frame" x="15" y="247" width="350" height="24"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="24" id="RSD-hP-qA8"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -51,7 +51,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="rGq-Qn-xH9" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LZN-Uh-Bxz"/>
-                <constraint firstItem="fTx-iE-ZPJ" firstAttribute="top" secondItem="Gk8-R7-rRg" secondAttribute="bottom" constant="8" id="bLc-HT-eLX"/>
+                <constraint firstItem="fTx-iE-ZPJ" firstAttribute="top" secondItem="Gk8-R7-rRg" secondAttribute="bottom" constant="3" id="bLc-HT-eLX"/>
                 <constraint firstItem="fTx-iE-ZPJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="dXl-Jc-vO8"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Gk8-R7-rRg" secondAttribute="trailing" constant="10" id="fUR-LT-s2r"/>
                 <constraint firstItem="kYz-T8-gHw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="116" id="fpb-Oq-dSC"/>
@@ -75,5 +75,6 @@
     </objects>
     <resources>
         <image name="Bild" width="375" height="192"/>
+        <image name="userImage" width="60" height="60"/>
     </resources>
 </document>

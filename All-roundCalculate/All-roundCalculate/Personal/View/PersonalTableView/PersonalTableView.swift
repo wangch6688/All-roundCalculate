@@ -43,7 +43,6 @@ class PersonalTableView: UITableView {
 extension PersonalTableView : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: true)
-        
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {

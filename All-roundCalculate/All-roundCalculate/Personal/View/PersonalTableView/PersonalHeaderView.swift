@@ -20,9 +20,9 @@ class PersonalHeaderView: UIView {
         self.frame = CGRect(x: 0, y: 0, width: kScreenWidth, height: 276)
         namelabel.font = UIFont(name: normalFontIdentifier, size: 20)
         emailAdressLabel.font = UIFont(name: normalFontIdentifier, size: 15)
-        
+        userImageView.layer.cornerRadius = userImageView.frame.size.width/2
+        userImageView.layer.masksToBounds = true
         namelabel.text = "Kevin·KG"
         emailAdressLabel.text = "https://ccwKevin.club"
     }
-
 }
