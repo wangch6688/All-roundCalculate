@@ -14,32 +14,31 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
         case `default`
         case light
     }
-    
+
     var barStyle: CustomBarStyle = .default {
         didSet {
             self.setNeedsStatusBarAppearanceUpdate()
         }
     }
-    
+
     let emptyView = Bundle.main.loadNibNamed("EmptyView", owner: self, options: nil)?.first as? EmptyView
-    
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.layer.shadowColor = UIColor.black.cgColor
         self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 1)
         self.navigationController?.navigationBar.layer.shadowOpacity = 0.2
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationController?.interactivePopGestureRecognizer?.delegate = self
         view.backgroundColor = UIColor.white
         self.automaticallyAdjustsScrollViewInsets = false
         view.addSubview(self.emptyView!)
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         if self.barStyle == .default {
             return .default
@@ -47,11 +46,11 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
             return .lightContent
         }
     }
-    
+
     func handleNavigationTransition(_ sender: UIPanGestureRecognizer) {
-        
+
     }
-    
+
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
         if navigationController?.childViewControllers.count == 1 {
             return false
@@ -59,7 +58,7 @@ class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
             return true
         }
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

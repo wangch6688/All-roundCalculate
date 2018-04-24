@@ -15,10 +15,10 @@ class Year_endController: BaseViewController {
 
         // Do any additional setup after loading the view.
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         self.navigationItem.title = "年终计算"
     }
 
@@ -26,7 +26,6 @@ class Year_endController: BaseViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

@@ -9,7 +9,7 @@
 import UIKit
 
 class EmptyView: UIView {
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
     }

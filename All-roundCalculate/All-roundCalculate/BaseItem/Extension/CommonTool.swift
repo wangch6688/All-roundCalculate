@@ -9,7 +9,7 @@
 import UIKit
 
 let kStatusBarHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
-let kNavBarHeight:CGFloat = 44.0
+let kNavBarHeight: CGFloat = 44.0
 
 /*代替之前的49*/
 let kTabBarHeight: CGFloat = (UIApplication.shared.statusBarFrame.size.height > 20.0 ? 83.0:49.0)
@@ -44,13 +44,13 @@ let AudiGray20 = UIColor(hexString: "#cccccc") // 204, 204, 204
 let AudiGray15 = UIColor(hexString: "#d9d9d9") // 217, 217, 217
 let AudiGray10 = UIColor(hexString: "#e5e5e5") // 229, 229, 229
 let AudiGray05 = UIColor(hexString: "#f2f2f2") // 242, 242, 242
-let AudiBgColor = UIColor(hexString:"#EFEFF4") // 239, 239, 244
+let AudiBgColor = UIColor(hexString: "#EFEFF4") // 239, 239, 244
 
 struct Section {
     var name: String?
     var items: [String?]
     var collapsed: Bool
-    
+
     init(name: String?, items: [String?]) {
         self.name = name
         self.items = items
@@ -67,7 +67,6 @@ func currentViewController() -> BaseViewController? {
         return nil
     }
 }
-
 
 extension UIColor {
     convenience init(hexString: String) {

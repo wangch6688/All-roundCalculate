@@ -26,14 +26,14 @@ class MainNavigationController: UINavigationController {
             button.setTitleColor(.darkGray, for: .normal)
             button.setTitleColor(.red, for: .highlighted)
             button.sizeToFit()
-            button.contentEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
+            button.contentEdgeInsets = UIEdgeInsets(top: 0, left: -10, bottom: 0, right: 0)
             button.contentHorizontalAlignment = .left
             viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: button)
             viewController.hidesBottomBarWhenPushed = true
         }
         super.pushViewController(viewController, animated: animated)
     }
-    
+
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
     }
@@ -50,11 +50,11 @@ extension MainNavigationController {
 extension MainNavigationController {
     fileprivate func setUpPopGesTrue() {
         // 1.使用运行时, 打印手势中所有属性
-        guard let targets = interactivePopGestureRecognizer!.value(forKey:  "_targets") as? [NSObject] else { return }
+        guard let targets = interactivePopGestureRecognizer!.value(forKey: "_targets") as? [NSObject] else { return }
         let targetObjc = targets[0]
         let target = targetObjc.value(forKey: "target")
         let action = Selector(("handleNavigationTransition:"))
-        
+
         let panGes = UIPanGestureRecognizer(target: target, action: action)
         view.addGestureRecognizer(panGes)
     }

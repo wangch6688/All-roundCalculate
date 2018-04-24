@@ -13,15 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
         let rootViewController = MainTabBarController()
         rootViewController.delegate = self
         window?.rootViewController = rootViewController
-        window?.makeKeyAndVisible();
-        
+        window?.makeKeyAndVisible()
+
         return true
     }
 
@@ -36,9 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {}
 }
 
-extension AppDelegate : UITabBarControllerDelegate {
+extension AppDelegate: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         print("\(viewController)")
     }
 }
-

@@ -11,13 +11,13 @@ import UIKit
 class PersonalHeader: UIView {
 
     @IBOutlet weak var titleLabel: UILabel!
-    
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+
         defaultSetting()
     }
-    
+
     func defaultSetting() {
         titleLabel.font = UIFont(name: normalFontIdentifier, size: 15)
         titleLabel.textColor = AudiGray40
