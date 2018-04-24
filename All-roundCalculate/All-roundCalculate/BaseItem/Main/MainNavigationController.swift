@@ -13,7 +13,7 @@ class MainNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "nav_bar_white"), for: .default)
-        self.navigationBar.shadowImage = UIImage(named: "nav_shadow")
+        self.navigationBar.shadowImage = #imageLiteral(resourceName: "nav_shadow")
         setUpPopGesTrue()
     }
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -41,7 +41,8 @@ class MainNavigationController: UINavigationController {
 
 // MARK: - 点击事件
 extension MainNavigationController {
-    @objc func back() {
+    @objc
+    func back() {
         popViewController(animated: true)
     }
 }

@@ -12,8 +12,8 @@ class MainTabBar: UITabBar {
 
     lazy var publishButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setBackgroundImage(UIImage(named: "tabBar_publish_icon"), for: .normal)
-        button.setBackgroundImage(UIImage(named: "tabBar_publish_click_icon"), for: .highlighted)
+        button.setBackgroundImage(#imageLiteral(resourceName: "tabBar_publish_icon"), for: .normal)
+        button.setBackgroundImage(#imageLiteral(resourceName: "tabBar_publish_click_icon"), for: .highlighted)
         button.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         button.addTarget(self, action: #selector(clickPublishButton), for: .touchUpInside)
         return button
@@ -55,7 +55,8 @@ class MainTabBar: UITabBar {
 
 extension MainTabBar {
 
-    @objc fileprivate func clickPublishButton() {
+    @objc
+    fileprivate func clickPublishButton() {
 
 //        let publishVC = PublishViewController()
 //
