@@ -12,16 +12,16 @@ class MainNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.setBackgroundImage(UIImage(named: "nav_bar_white"), for: .default)
+        self.navigationBar.setBackgroundImage(#imageLiteral(resourceName: "nav_bar_white"), for: .default)
         self.navigationBar.shadowImage = UIImage(named: "nav_shadow")
         setUpPopGesTrue()
     }
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        if childViewControllers.count > 0 {
+        if childViewControllers.isEmpty == false {
             let button = UIButton(type: .custom)
             button.setTitle("返回", for: .normal)
-            button.setImage(UIImage(named: "navigationButtonReturn"), for: .normal)
-            button.setImage(UIImage(named: "navigationButtonReturnClick"), for: .highlighted)
+            button.setImage(#imageLiteral(resourceName: "navigationButtonReturn"), for: .normal)
+            button.setImage(#imageLiteral(resourceName: "navigationButtonReturnClick"), for: .highlighted)
             button.addTarget(self, action: #selector(back), for: .touchUpInside)
             button.setTitleColor(.darkGray, for: .normal)
             button.setTitleColor(.red, for: .highlighted)
@@ -41,7 +41,7 @@ class MainNavigationController: UINavigationController {
 
 // MARK: - 点击事件
 extension MainNavigationController {
-    @objc func back(){
+    @objc func back() {
         popViewController(animated: true)
     }
 }
