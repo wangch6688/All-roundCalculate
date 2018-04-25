@@ -1,4 +1,5 @@
 PODS:
+  - Bugly (2.5.0)
   - Charts (3.1.1):
     - Charts/Core (= 3.1.1)
   - Charts/Core (3.1.1)
@@ -12,6 +13,7 @@ PODS:
   - SnapKit (4.0.0)
 
 DEPENDENCIES:
+  - Bugly
   - Charts
   - IQKeyboardManagerSwift (~> 5.0.6)
   - Kingfisher (~> 4.5.0)
@@ -19,6 +21,7 @@ DEPENDENCIES:
   - SnapKit
 
 SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   Charts: 90a4d61da0f6e06684c591e3bcab11940fe61736
   IQKeyboardManagerSwift: 2e7dc7f98c111458c1ea2b373f893e8cf95e2b97
   Kingfisher: 26ae0473102b77b575da51960c932431e3745407
@@ -26,6 +29,6 @@ SPEC CHECKSUMS:
   RealmSwift: 4e903a494e05d866581d69ad6f7e7b879d446baf
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 2b43e5fedc42cca5f6670b15b725925f279894c7
+PODFILE CHECKSUM: 77aa35ddcf03faf0076a4d5cfe8937d428948d75
 
 COCOAPODS: 1.4.0

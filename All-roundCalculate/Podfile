@@ -9,5 +9,6 @@
  pod 'SnapKit'
  pod 'Kingfisher', '~> 4.5.0'
  pod 'IQKeyboardManagerSwift', '~> 5.0.6'
+ pod 'Bugly'
  
  end
