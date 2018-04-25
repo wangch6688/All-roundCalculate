@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2A2E7C74AF530127A91971C8 /* Pods_All_roundCalculate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D040BEA417749DCD375F4CF /* Pods_All_roundCalculate.framework */; };
+		E76E9EE720905BCD00CAE464 /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76E9EE620905BCD00CAE464 /* NetWorkManager.swift */; };
 		E7A200F32089B8C900151195 /* Audi-Extended-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A200F12089B8C900151195 /* Audi-Extended-Bold.ttf */; };
 		E7A200F42089B8C900151195 /* Audi-Screen-Normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E7A200F22089B8C900151195 /* Audi-Screen-Normal.ttf */; };
 		E7A200F72089C2D200151195 /* PersonalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A200F52089C2D200151195 /* PersonalCell.swift */; };
@@ -65,6 +66,7 @@
 		3ACF257B0D7CFE56C2E61A4B /* Pods-All-roundCalculate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All-roundCalculate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-All-roundCalculate/Pods-All-roundCalculate.debug.xcconfig"; sourceTree = "<group>"; };
 		3D040BEA417749DCD375F4CF /* Pods_All_roundCalculate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All_roundCalculate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6719CD936F5BBB5E918793E /* Pods-All-roundCalculate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All-roundCalculate.release.xcconfig"; path = "Pods/Target Support Files/Pods-All-roundCalculate/Pods-All-roundCalculate.release.xcconfig"; sourceTree = "<group>"; };
+		E76E9EE620905BCD00CAE464 /* NetWorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		E7A200F12089B8C900151195 /* Audi-Extended-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audi-Extended-Bold.ttf"; sourceTree = "<group>"; };
 		E7A200F22089B8C900151195 /* Audi-Screen-Normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Audi-Screen-Normal.ttf"; sourceTree = "<group>"; };
 		E7A200F52089C2D200151195 /* PersonalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E76E9EE520905B9600CAE464 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				E76E9EE620905BCD00CAE464 /* NetWorkManager.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
 		E7A200F02089B8B600151195 /* Reosurce */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +226,7 @@
 		E7CB39622085DA68005A1DAF /* All-roundCalculate */ = {
 			isa = PBXGroup;
 			children = (
+				E76E9EE520905B9600CAE464 /* Tool */,
 				E7CB39992085DF49005A1DAF /* BaseItem */,
 				E7CB39982085DDE0005A1DAF /* GJJ */,
 				E7CB39972085DDBD005A1DAF /* Compound */,
@@ -524,6 +535,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-All-roundCalculate/Pods-All-roundCalculate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -533,6 +545,7 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -565,6 +578,7 @@
 				E7CB39B72085F4A3005A1DAF /* BaseViewController.swift in Sources */,
 				E7A200FB2089C95900151195 /* PersonalHeaderView.swift in Sources */,
 				E7CB39A02085E141005A1DAF /* UIView+Extension.swift in Sources */,
+				E76E9EE720905BCD00CAE464 /* NetWorkManager.swift in Sources */,
 				E7CB39A92085E2AB005A1DAF /* CompoundController.swift in Sources */,
 				E7CB39A22085E23F005A1DAF /* CommonTool.swift in Sources */,
 				E7CB39B12085E2CA005A1DAF /* PersonalController.swift in Sources */,
@@ -748,10 +762,7 @@
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "All-roundCalculate/All-roundCalculate-Bridging-Header.h";
@@ -771,10 +782,7 @@
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculate/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "All-roundCalculate/All-roundCalculate-Bridging-Header.h";
@@ -791,11 +799,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -812,11 +816,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -832,11 +832,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -852,11 +848,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D7Q249K9TW;
 				INFOPLIST_FILE = "All-roundCalculateUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "club.kevinwcc.All-roundCalculateUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -13,13 +13,12 @@ class GJJViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        self.navigationItem.title = "五险一金"
+        self.navigationItem.title = "Personal"
     }
 
     override func didReceiveMemoryWarning() {
